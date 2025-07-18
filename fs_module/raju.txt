@@ -1,0 +1,7 @@
+Create a fully responsive, interactive, and visually engaging personal portfolio website using modern web technologies such as React.js, Tailwind CSS, and animation libraries like Framer Motion or AOS. The website should serve as a digital identity for showcasing your skills, professional experience, and personal projects in a creative and user-friendly manner.
+
+The design must include smooth scroll-based animations, elegant page transitions, and an engaging pre-loader or intro animation to captivate visitors from the start. Implement a dark/light mode toggle to enhance accessibility and user control over the visual theme. The site should include well-structured sections like Home, About Me, Projects, Skills, Resume, and Contact, all built with reusable and optimized React components.
+
+Each project in the “Projects” section should be displayed as a card with animations, tech tags, and links to live demos or GitHub repositories. Include a blog section where you can publish posts related to tech, coding tutorials, or personal growth to add value and SEO benefits. The Contact section must feature a fully working contact form with email integration (using EmailJS or Formspree), plus social media links.
+
+The entire website should be mobile-first and optimized for performance, SEO, and accessibility. Use Framer Motion or AOS to animate scroll-based elements and React Router for dynamic routing. Optional extras can include a typing effect in the hero section, animated skill bars or pie charts, and floating UIHello, this is a new line!
