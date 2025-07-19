@@ -26,5 +26,3 @@ app.listen(8000, () => {                  // Starting the server on port 8000
   console.log('Server is running on port 8000');
 });
    
-
-
