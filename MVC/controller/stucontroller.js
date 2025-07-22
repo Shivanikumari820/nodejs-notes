@@ -1,3 +1,7 @@
+const stuModel = require('../models/stuModel'); // Importing student model
+const empModel = require('../models/empModel'); // Importing employee model
+
+
 const homePage = (req,res)=>{
     res.send("</h1>Welcome to my student Home Page!</h1>");
 } 
