@@ -2,10 +2,12 @@ const express = require('express');
 const route = express.Router(); // Creating a new router instance
 const stucontroller  = require("../controller/stucontroller");
 
-route.get("/home", stucontroller.homePage);
+route.get("/", stucontroller.homePage);
 route.get("/about", stucontroller.aboutPage);
-route.get("/subject", stucontroller.subjectPage);
-route.get("/fees", stucontroller.feesPage);
+route.get("/product", stucontroller.productPage);
+route.get("/service", stucontroller.servicePage);
+route.get("/contact", stucontroller.contactPage); 
 
 
 module.exports = route;
+

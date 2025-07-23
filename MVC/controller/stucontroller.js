@@ -1,22 +1,31 @@
-const stuModel = require('../models/stuModel'); // Importing student model
-const empModel = require('../models/empModel'); // Importing employee model
+// const stuModel = require('../models/stuModel'); // Importing student model
+// const empModel = require('../models/empModel'); // Importing employee model
 
 
 const homePage = (req,res)=>{
-    res.send("</h1>Welcome to my student Home Page!</h1>");
+    // res.send("</h1>Welcome to my Home Page!</h1>");
+    res.render("home"); // Render the home view using EJS
 } 
 const aboutPage = (req,res)=>{
-    res.send("</h1>Welcome to my student About Page!</h1>");
+    // res.send("</h1>Welcome to my About Page!</h1>");
+    res.render("about");
 }
 
-const subjectPage = (req,res)=>{
-    res.send("</h1>Welcome to my student Subject Page!</h1>");
+const productPage = (req,res)=>{
+    // res.send("</h1>Welcome to my Subject Page!</h1>");
+    res.render("product");
+
 }
-const feesPage = (req,res)=>{
-    res.send("<h1>Welcome to my  student Fees Page!</h1>");
+
+const servicePage = (req,res)=>{
+    res.render("service");
+}
+
+const contactPage = (req,res)=>{
+    res.render("contact");
 }
 
 
 module.exports = {
-    homePage, aboutPage, subjectPage, feesPage
-}
+    homePage, aboutPage, productPage, servicePage, contactPage
+};
