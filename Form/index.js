@@ -4,19 +4,18 @@ const mongoose = require('mongoose');          // Importing Mongoose
 const stuRoutes = require('./routes/stuRoutes'); 
 const bodyparser = require("body-parser");
 
+
 app.set('view engine', 'ejs');          // Setting EJS as the view engine
 
-// mongoose.connect("mongodb://127.0.0.1:27017/ShivaniDB")
-//   .then(() => console.log("MongoDB connected successfully"))
-//   .catch(err => console.log(err));
-// mongoose.connect("mongodb://127.0.0.1:27017/employeeDB")
-//   .then(() => console.log("MongoDB connected successfully"))
-//   .catch(err => console.log(err));
+mongoose.connect("mongodb://127.0.0.1:27017/FormDB")
+  .then(() => console.log("MongoDB connected successfully"))
+  .catch(err => console.log(err));
 
+// Use body-parser middleware to parse JSON and URL-encoded data
+app.use(bodyparser.urlencoded({ extended: true }));
+app.use(bodyparser.json());
 
-// app.use('/students', stuRoutes);          // Using router
 app.use('/', stuRoutes);        // Using router for root path
-
 
 
 app.listen(9000, () => {

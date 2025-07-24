@@ -1,4 +1,4 @@
-// const stuModel = require('../models/stuModel'); // Importing student model
+const stuModel = require('../models/stuModel'); // Importing student model
 // const empModel = require('../models/empModel'); // Importing employee model
 
 
@@ -24,6 +24,8 @@ const servicePage = (req,res)=>{
 const contactPage = (req,res)=>{
     res.render("contact");
 }
+
+
 
 
 module.exports = {

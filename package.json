@@ -13,6 +13,7 @@
     "aws4": "^1.13.2",
     "bcrypt-pbkdf": "^1.0.2",
     "bl": "^2.2.1",
+    "body-parser": "^2.2.0",
     "bson": "^1.1.6",
     "bufferutil": "^4.0.9",
     "camelcase": "^1.2.1",
