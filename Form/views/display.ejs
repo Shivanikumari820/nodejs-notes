@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display</title>
+  </head>
+  <body bgcolor="pink">
+   <a href="/">Home</a>| <a href="/insert">Insert</a>|
+    <a href="/display">Display</a>|
+    <a href="/update">Update</a>|
+      <a href="/search">Seacrh</a>  
+    <hr size="4" color="red" />
+    <h1>Student data display</h1>
+    
+    <table border="1" bgcolor="skyblue" align="centre" height="100" width="200">
+      <tr>
+        <th>Roll.No</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Fees</th>
+       
+      </tr>
+
+      <% Data.forEach((key)=>{  %>
+        <tr>
+          <td><%= key.rollno %></td>
+          <td><%= key.name %></td>
+          <td><%= key.subject %></td>
+          <td><%= key.fees %></td>
+        </tr>
+
+
+     <% })%>
+
+    </table>
+     <hr size="4" color="red" />
+    www.mycompany.com || All Rights Reserved
+
+  </body>
+</html>

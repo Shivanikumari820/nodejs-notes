@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body bgcolor="pink">
+    <a href="/">Home</a>| <a href="/insert">Insert</a>|
+    <a href="/display">Display</a>|
+     <a href="/update">Update</a>|
+      <a href="/search">Seacrh</a> 
+    <hr size="4" color="red" />
+    <h1>Edit data page</h1>
+    
+    <form method="post" action="/editsave">
+        <input type="hidden" value="<%= Data._id%>" name="id">
+    Enter RollNo:    <input type="text" value="<%= Data.rollno %>" name="rollno"><br> <br>
+    Enter Name:    <input type="text"value="<%= Data.name %>" name="name"><br> <br>
+    Enter Subject:    <input type="text" value="<%= Data.subject %>" name="subject"><br> <br>
+    Enter Fees:    <input type="text" value="<%= Data.fees %>" name="fees"><br> <br>
+    <button type="submit">Save</button>
+    </form>
+
+
+
+
+    <hr size="4" color="red" />
+    www.mycompany.com || All Rights Reserved
+  </body>
+</html>

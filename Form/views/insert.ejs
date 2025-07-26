@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Form</title>
+    <title>insert</title>
 </head>
-<body style="background-color: yellow;">
+<body bgcolor="pink">
+    <a href="/">Home</a>| <a href="/insert">Insert</a>|
+    <a href="/display">Display</a>|
+    <a href="/update">Update</a>|
+      <a href="/search">Seacrh</a>  
+    <hr size="4" color="red" />
+    <h1>Welcome to insert page</h1>
+   
 
-    <nav>
-        <a href="/">Home</a>
-        <a href="/insert">Insert</a>
-        <a href="/display">Display</a>
-    </nav>
+    <form action="/save" method="post" >
+      <h1>Student Records</h1>
+      <label> Enter Roll Number : <input type="text" name="rno" /> </label>
+      <br />
+      <label> Enter Name : <input type="text" name="nm" /> </label> <br />
+      <label> Enter subject : <input type="text" name="sub" /> </label> <br />
+      <label> Enter Fees : <input type="text" name="fs" /> </label> <br />
+     <button>save</button>
 
-    <h2>Student Information Form</h2>
-
-    <form action="/save" method="post">
-        <label for="rollno">Roll No:</label><br>
-        <input type="text" id="rollno" name="rollno" required><br><br>
-
-         <label for="classname">Student Name:</label><br>
-        <input type="text" id="classname" name="Studentname" required><br><br>
-
-        <label for="classname">Class Name:</label><br>
-        <input type="text" id="classname" name="classname" required><br><br>
-
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject" required><br><br>
-
-        <button type="submit">Save</button>
     </form>
+     <hr size="4" color="red" />
+    www.mycompany.com || All Rights Reserved
 
-</body>
+  </body>
 </html>
