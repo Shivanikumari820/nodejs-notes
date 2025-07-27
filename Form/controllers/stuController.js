@@ -68,3 +68,4 @@ module.exports = { homePage, insertPage, displayPage,stuSave,updatePage,dataDele
 
 
 
+
