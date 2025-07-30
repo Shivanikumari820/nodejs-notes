@@ -3,15 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>search</title>
+    <title>Search</title>
   </head>
   <body bgcolor="pink">
-    <a href="/">Home</a>| <a href="/insert">Insert</a>|
-    <a href="/display">Display</a>|
-     <a href="/update">Update</a>|
-      <a href="/search">Seacrh</a> 
+    <a href="/">Home</a> |
+    <a href="/insert">Insert</a> |
+    <a href="/display">Display</a> |
+    <a href="/update">Update</a> |
+    <a href="/search">Search</a>
     <hr size="4" color="red" />
-    <h1>Welcome to search page</h1>
+    <h1>Welcome to Search Page</h1>
+
+    <form action="/search" method="get">
+      <label> Enter Roll Number to Search:
+        <input type="text" name="rno" required />
+      </label>
+      <button type="submit">Search</button>
+    </form>
+
+    <% if (Data.length > 0) { %>
+      <h2>Search Result:</h2>
+      <table border="1" cellpadding="10">
+        <tr>
+          <th>Roll No</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Fees</th>
+        </tr>
+        <% Data.forEach((stu) => { %>
+          <tr>
+            <td><%= stu.rollno %></td>
+            <td><%= stu.name %></td>
+            <td><%= stu.subject %></td>
+            <td><%= stu.fees %></td>
+          </tr>
+        <% }) %>
+      </table>
+    <% } else if (typeof Data !== 'undefined') { %>
+      <p>No student found.</p>
+    <% } %>
+
     <hr size="4" color="red" />
     www.mycompany.com || All Rights Reserved
   </body>
