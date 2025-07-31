@@ -8,8 +8,8 @@ const insertPage = (req, res) => {
 };
 const displayPage = async (req, res) => {
   const Student = await stuModel.find();
-  // res.render("display", { Data: Student });
-  res.send(Student);
+  // res.render("display", { Data: Student });   //res.render is used for ejs
+  res.send(Student);   //for postman api we can always use res.send()
 };
 
 const updatePage = async (req, res) => {
