@@ -13,6 +13,7 @@ router.get('/salary', (req, res) => {
   res.send('<h1>Welcome to my Salary Page!</h1>'); // Handling GET requests to the salary page
 });
 
+
 router.get('/department', (req, res) => {
   res.send('<h1>Welcome to my Department Page!</h1>'); // Handling GET requests to the department page
 });
