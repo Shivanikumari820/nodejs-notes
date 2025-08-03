@@ -12,7 +12,7 @@ router.get('/address', (req, res) => {
 router.get('/salary', (req, res) => {
   res.send('<h1>Welcome to my Salary Page!</h1>'); // Handling GET requests to the salary page
 });
-
+   
 
 router.get('/department', (req, res) => {
   res.send('<h1>Welcome to my Department Page!</h1>'); // Handling GET requests to the department page
@@ -21,6 +21,6 @@ router.get('/department', (req, res) => {
 router.get('/work', (req, res) => {
   res.send('<h1>Welcome to my Work Page!</h1>'); // Handling GET requests to the work page
 });
-
+  
 
 module.exports = router; // Exporting the router for use in other files
